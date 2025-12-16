@@ -11,6 +11,11 @@ header {
 	display: flex;
 	justify-content: space-evenly;
 }
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
 nav {
 	display: flex;
 	justify-content: space-between;
@@ -53,6 +58,32 @@ a {
 	background: center/cover url(../assets/waves-phone.svg);
 	height: 110px;
 }
+.avantages {
+	display: grid;
+	grid-template-areas:
+		"a"
+		"b"
+		"c";
+	justify-items: center;
+	gap: 24px;
+}
+.avantages-article {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+	text-align: start;
+	justify-content: start;
+	max-width: 60%;
+}
+.avantages-article-1 {
+	grid-area: a;
+}
+.avantages-article-2 {
+	grid-area: b;
+}
+.avantages-article-3 {
+	grid-area: c;
+}
 @media screen and (min-width: 768px) and (max-width: 1023px) {
 	.nav-links {
 		display: block;
@@ -62,21 +93,26 @@ a {
 	}
 	.waves {
 		background: center/cover url(../assets/waves-tablet.svg);
-		height: 103px;
+		height: 120px;
 	}
 	.hero-article {
-		width: 65%;
+		width: 80%;
 	}
 	.first-unicorn {
 		display: block;
-		right: 35px;
+		right: 10px;
 		bottom: 20px;
 	}
+    .avantages {
+        grid-template-areas: 
+        "a b"
+        "c .";
+    }
 }
 @media screen and (min-width: 1024px) {
-    header {
-        padding: 50px 40px 20px;
-    }
+	header {
+		padding: 50px 40px 20px;
+	}
 	.nav-links {
 		display: block;
 	}
@@ -88,15 +124,19 @@ a {
 	}
 	.waves {
 		background: center/cover url(../assets/waves-desktop.svg);
-		height: 103px;
+		height: 140px;
 	}
 	.hero-article {
 		width: 43%;
-        padding: 40px;
+		padding: 40px;
 	}
 	.first-unicorn {
 		display: block;
-		right: 160px;
-		bottom: 20px;
+		right: 230px;
+		bottom: 10px;
 	}
+    .avantages {
+        grid-template-areas: 
+        "a b c";
+    }
 }

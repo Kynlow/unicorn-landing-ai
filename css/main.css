@@ -38,3 +38,14 @@ h1 {
 	font-family: var(--poppins);
     width: 70%;
 }
+.avantages-article-p {
+    font-family: var(--poppins);
+    font-size: 16px;
+    color: var(--mirageblack);
+}
+.avantages-article-first-p {
+    font-weight: 700;
+}
+.avantages-article-second-p {
+    font-weight: 400;
+}

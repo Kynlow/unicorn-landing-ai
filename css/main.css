@@ -28,24 +28,95 @@ h1 {
 	font-weight: 700;
 	line-height: 48px;
 	font-family: var(--poppins);
-    margin: 0px;
-    width: 75%;
+	margin: 0px;
+	width: 75%;
+}
+h6 {
+	font-family: var(--poppins);
+	font-weight: 700;
+	font-size: 14px;
+	color: var(--mirageblack);
+}
+h3 {
+	font-family: var(--poppins);
+	font-weight: 700;
+	font-size: 28px;
+	color: var(--mirageblack);
+}
+h2 {
+	color: var(--white);
+	font-weight: 700;
+	font-family: var(--poppins);
+	font-size: 32px;
+}
+h5 {
+	color: var(--mirageblack);
+	font-weight: 800;
+	font-size: 16px;
+	font-family: var(--poppins);
 }
 .hero-p {
 	color: var(--white);
 	font-size: 16px;
 	font-weight: 400;
 	font-family: var(--poppins);
-    width: 70%;
+	width: 70%;
 }
 .avantages-article-p {
-    font-family: var(--poppins);
-    font-size: 16px;
-    color: var(--mirageblack);
+	font-family: var(--poppins);
+	font-size: 16px;
+	color: var(--mirageblack);
 }
 .avantages-article-first-p {
-    font-weight: 700;
+	font-weight: 700;
 }
 .avantages-article-second-p {
-    font-weight: 400;
+	font-weight: 400;
+}
+
+.pink {
+	color: var(--charmpink);
+	font-weight: 700;
+}
+
+.demo-article-p {
+	color: var(--white);
+	font-family: var(--poppins);
+	font-size: 16px;
+	font-weight: 300;
+}
+label {
+	font-family: var(--poppins);
+	color: var(--white);
+	font-weight: 600;
+	font-size: 14px;
+}
+input {
+	border: 0px;
+	background-color: var(--white);
+	border-radius: 8px;
+	padding: 8px;
+	width: 250px;
+}
+input::placeholder {
+	color: var(--lightgrey);
+	font-family: var(--poppins);
+	font-size: 14px;
+	font-weight: 500;
+}
+.contact-button {
+	padding: 12px 32px;
+	color: #5c55c9;
+	background-color: var(--white);
+	border-radius: 999px;
+	font-family: var(--poppins);
+}
+.logo-copyright .footer-p {
+	font-weight: 500;
+}
+.footer-p {
+	color: var(--lightgrey);
+	font-size: 14px;
+	font-weight: 400;
+	font-family: var(--poppins);
 }

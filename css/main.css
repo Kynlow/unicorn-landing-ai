@@ -13,7 +13,7 @@ button {
 	width: max-content;
 	padding: 10px 20px;
 	border-radius: 999px;
-
+	font-family: var(--poppins);
 	font-size: 14px;
 	font-weight: 700;
 	border: 0px;
@@ -50,10 +50,10 @@ h2 {
 	font-size: 32px;
 }
 h4 {
-    font-family: var(--poppins);
-    color: var(--mirageblack);
-    font-weight: 400;
-    font-size: 14px;
+	font-family: var(--poppins);
+	color: var(--mirageblack);
+	font-weight: 400;
+	font-size: 14px;
 }
 h5 {
 	color: var(--mirageblack);
@@ -80,7 +80,6 @@ h5 {
 	font-weight: 400;
 }
 
-
 .demo-article-p {
 	color: var(--white);
 	font-family: var(--poppins);
@@ -99,10 +98,46 @@ input {
 	border-radius: 8px;
 	padding: 8px;
 	width: 250px;
+	font-family: var(--poppins);
+	font-size: 14px;
+	color: var(--mirageblack);
+	font-weight: 500;
 }
 input::placeholder {
 	color: var(--lightgrey);
 	font-family: var(--poppins);
+	font-size: 14px;
+	font-weight: 500;
+}
+input[type="checkbox"] {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-ms-appearance: none;
+	width: 24px;
+	height: 24px;
+	border-radius: 4px;
+	padding: 2px 4px;
+}
+input[type="checkbox"]:checked {
+	position: relative;
+	&:before {
+		content: url(../assets/checkbox.svg);
+		display: block;
+		position: absolute;
+	}
+}
+textarea {
+	padding: 8px;
+	line-height: 42px;
+	border-radius: 8px;
+	font-family: var(--poppins);
+	color: var(--mirageblack);
+	font-size: 14px;
+	font-weight: 500;
+}
+textarea::placeholder {
+	font-family: var(--poppins);
+	color: var(--lightgrey);
 	font-size: 14px;
 	font-weight: 500;
 }
@@ -191,7 +226,7 @@ body {
 	flex-direction: column;
 	gap: 20px;
 }
-form {
+.demo-form {
 	display: flex;
 	flex-direction: column;
 	align-items: start;
@@ -257,23 +292,27 @@ hr {
 	grid-area: ff;
 }
 .blog-p {
-    font-family: var(--poppins);
-    color: var(--mirageblack);
-    font-weight: 400;
-    font-size: 12px;
+	font-family: var(--poppins);
+	color: var(--mirageblack);
+	font-weight: 400;
+	font-size: 12px;
 }
 .pink {
 	color: var(--charmpink);
 	font-weight: 700;
 }
 .white {
-    color: var(--mirageblack);
-    text-align: center;
-    font-size: 32px;
+	color: var(--mirageblack);
+	text-align: center;
+	font-size: 32px;
 }
 .dark {
-    color: var(--mirageblack);
-    font-size: 18px;
+	color: var(--mirageblack);
+	font-size: 18px;
+}
+.grey {
+	color: var(--mirageblack);
+	font-size: 32px;
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
 	.nav-links {
